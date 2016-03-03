@@ -1,0 +1,49 @@
+#navbar-header {	
+	h5 {
+
+		a {
+			text-transform: none;
+			font-size: 2.4rem;
+			letter-spacing: -0.05rem;
+		}
+		@media (min-width: @small-mobile) {
+			text-align: center;
+		}
+
+		@media (min-width: @mobile) {
+			.u-pull-left
+		}
+	}
+	.header-link {
+		text-decoration: none;
+	}
+
+}
+
+#navbar-list {
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		@media (min-width: @small-mobile) {
+			text-align: center;
+		}
+
+		@media (min-width: @mobile) {
+			.u-pull-right
+		}
+	}
+
+}
+
+
+.navbar-item:first-child {
+	margin-left: 0;
+}
+
+.navbar-item {
+	position: relative;
+	float: left;
+	margin-bottom: 0;
+	.link-space;
+}
