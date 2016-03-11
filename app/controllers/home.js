@@ -1,6 +1,15 @@
 var express = require('express'),
   router = express.Router();
 
+  var titles = {
+    'rememberize': 'Rememberize',
+    'todaysholiday': 'Today\'s Holiday',
+    'soundcloudcast': 'Soundcloudcast',
+    'holidaybot': 'Holiday Bot',
+    'homemade': "Homemade",
+    'weatherapp': 'Weather App'
+  };
+
 module.exports = function (app) {
   app.use('/', router);
   app.use('/work', router);
@@ -21,7 +30,7 @@ router.get('/work', function (req, res, next) {
 router.get('/work/:title', function (req, res, next) {
 	var title = req.params.title;
     res.render('layouts/work/' + title, {
-      title: title
+      'title': titles[title]
     });
 });
 

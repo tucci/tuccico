@@ -919,6 +919,9 @@ there.
   width: 100%;
   height: auto;
 }
+.muted {
+  color: #A9A9A9;
+}
 body {
   font-family: 'Roboto';
 }
